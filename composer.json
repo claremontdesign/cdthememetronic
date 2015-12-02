@@ -1,0 +1,36 @@
+{
+	"name": "claremontdesign/cdthememetronic",
+	"description": "ClaremontDesign - CdBackend Metronic Theme Package",
+	"license": "ClaremontDesign/MadLabs License",
+	"repositories": [
+		{
+			"type": "composer",
+			"url": "http://claremontdesign.com/repo/"
+		}
+	],
+	"authors": [
+		{
+			"name": "Dennes B Abing",
+			"email": "dennes.b.abing@gmail.com"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"Claremontdesign\\Cdthememetronic\\": "src/"
+		},
+		"files": [
+			"src/Helpers/helpers.php"
+		]
+	},
+	"autoload-dev": {
+		"classmap": [
+			"tests/TestCase.php"
+		]
+	},
+	"minimum-stability": "dev",
+	"require": {
+		"illuminate/support": "~5",
+		"claremontdesign/cdbase": "dev-master",
+		"claremontdesign/cdbackend": "dev-master"
+	}
+}
