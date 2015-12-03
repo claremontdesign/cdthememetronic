@@ -27,22 +27,22 @@
 					<i class="fa fa-angle-down"></i>
 				</a>
 				<ul class="dropdown-menu">
-					<li>
+<!--					<li>
 						<a href="/admin/account/">
 							<i class="fa fa-user"></i> My Profile
 						</a>
 					</li>
-					<li class="divider"></li>
+					<li class="divider"></li>-->
 					<li>
 						<a href="javascript:;" id="trigger_fullscreen">
 							<i class="fa fa-arrows"></i> Full Screen
 						</a>
 					</li>
-					<li>
+<!--					<li>
 						<a href="/admin/lockout">
 							<i class="fa fa-lock"></i> Lock Screen
 						</a>
-					</li>
+					</li>-->
 					<li>
 						<a href="/admin/logout">
 							<i class="fa fa-key"></i> Log Out

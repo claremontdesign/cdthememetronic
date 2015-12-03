@@ -60,6 +60,8 @@
 					<!-- BEGIN PAGE CONTENT-->
 					<div class="row">
 						<div class="col-md-12">
+									{!! cd_display_errors() !!}
+									{!! cd_display_msgs() !!}
 							<div class="portlet">
 								<div class="portlet-title">
 									<div class="caption">
@@ -67,8 +69,6 @@
 									</div>
 								</div>
 								<div class="portlet-body">
-									{!! cd_display_errors() !!}
-									{!! cd_display_msgs() !!}
 									@yield('content')
 								</div>
 							</div>
