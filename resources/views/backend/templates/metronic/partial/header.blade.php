@@ -4,7 +4,7 @@
 	<div class="header-inner">
 		<!-- BEGIN LOGO -->
 		<a class="navbar-brand" href="{{ url('/admin') }}">
-			<img src="{{ cd_thememetronic_asset() }}assets/img/logo.png" alt="logo" class="img-responsive"/>
+			<img src="{{ cd_backend_logo() }}" alt="logo" class="img-responsive"/>
 		</a>
 		<!-- END LOGO -->
 		<!-- BEGIN RESPONSIVE MENU TOGGLER -->
