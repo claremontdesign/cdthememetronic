@@ -5,3 +5,48 @@
 .img-responsive, .thumbnail>img, .thumbnail a>img, .carousel-inner>.item>img, .carousel-inner>.item>a>img{
 	max-width:unset;
 }
+
+/**SORTABLE**/
+td.column-type-sortable{
+
+}
+.ui-state-highlight { height: 1.5em; line-height: 1.2em; background-color: rgba(255,255,0, 0.3); }
+
+/**FormStatic**/
+.form-group-static{
+	margin-bottom: 20px;
+}
+.form-group-static .control-label{
+	padding-bottom: 7px;
+	width: 100%;
+	font-weight: bold;
+	border-bottom: 1px solid #EBEBEB;
+}
+.form-group-static .form-control-static{
+	margin-left: 20px;
+	font-size: 130%;
+}
+.form-group-static .help-block{
+	margin-left: 20px;
+	margin-top:10px !important;
+}
+.input-group{
+	width:100%;
+}
+/**PrintView**/
+body.print-view{
+	background-color: white !important;
+	padding: 20px !important;
+}
+body.print-view .page-sidebar,
+body.print-view .footer-tools,
+body.print-view .page-header-meta,
+body.print-view .widget-toolbars,
+body.print-view .header{
+	display: none !important;
+}
+body.print-view .page-header-fixed,
+body.print-view .page-content,
+body.print-view .page-container{
+	padding:0px !important;;margin:0px !important;
+}

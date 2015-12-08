@@ -26,6 +26,7 @@
 		<link href="{{ cd_thememetronic_asset() }}assets/css/plugins.css" rel="stylesheet" type="text/css"/>
 		<link href="{{ cd_thememetronic_asset() }}assets/css/themes/default.css" rel="stylesheet" type="text/css" id="style_color"/>
 		<link href="{{ cd_thememetronic_asset() }}assets/css/custom.css" rel="stylesheet" type="text/css"/>
+		<link href="{{ cd_backend_asset() }}css/cdbackend.css" rel="stylesheet" type="text/css"/>
 		<!-- END THEME STYLES -->
 		<script src="{{ cd_thememetronic_asset() }}assets/plugins/jquery-1.10.2.min.js" type="text/javascript"></script>
 		<script src="{{ cd_thememetronic_asset() }}assets/plugins/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
@@ -48,7 +49,7 @@
 				<div class="page-content">
 					{!! view(cd_thememetronic_view_name('partial.stylecustomizer')) !!}
 					<!-- BEGIN PAGE HEADER-->
-					<div class="row">
+					<div class="row page-header-meta">
 						<div class="col-md-12">
 							<h3 class="page-title">
 								@yield('page_title') <small>@yield('page_subtitle')</small>
@@ -58,10 +59,18 @@
 					</div>
 					<!-- END PAGE HEADER-->
 					<!-- BEGIN PAGE CONTENT-->
-					<div class="row">
+					<div class="row page-main-content">
 						<div class="col-md-12">
-									{!! cd_display_errors() !!}
-									{!! cd_display_msgs() !!}
+							{!! cd_display_errors() !!}
+							{!! cd_display_msgs() !!}
+							<div class="row widget-toolbars">
+								<div class="col-md-6 pull-left">
+									{!! cd_backend_toolbars('topleft') !!}
+								</div>
+								<div class="col-md-6 pull-right" style="text-align:right;">
+									{!! cd_backend_toolbars('topright') !!}
+								</div>
+							</div>
 							<div class="portlet">
 								<div class="portlet-title">
 									<div class="caption">
@@ -70,6 +79,14 @@
 								</div>
 								<div class="portlet-body">
 									@yield('content')
+								</div>
+							</div>
+							<div class="row widget-toolbars">
+								<div class="col-md-6 pull-left">
+									{!! cd_backend_toolbars('bottomleft') !!}
+								</div>
+								<div class="col-md-6 pull-right">
+									{!! cd_backend_toolbars('bottomright') !!}
 								</div>
 							</div>
 						</div>
@@ -97,6 +114,7 @@
 		<script src="{{ cd_thememetronic_asset() }}assets/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
 		<!-- END CORE PLUGINS -->
 		<script src="{{ cd_thememetronic_asset() }}assets/scripts/core/cdbase.js"></script>
+		<script src="{{ cd_backend_asset() }}js/cdbackend.js"></script>
 		<script type="text/javascript">
 jQuery(document).ready(function() {
 	App.init();
