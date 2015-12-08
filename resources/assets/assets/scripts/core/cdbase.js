@@ -1288,6 +1288,11 @@ var App = function () {
             return isIE9;
         },
 
+        // check IE9 mode
+        assetBase: function () {
+            return assetBase;
+        },
+
         //check RTL mode
         isRTL: function () {
             return isRTL;

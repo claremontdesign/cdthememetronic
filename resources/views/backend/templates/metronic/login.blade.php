@@ -25,7 +25,7 @@
 		<link href="{{ cd_thememetronic_asset() }}assets/css/style-responsive.css" rel="stylesheet" type="text/css"/>
 		<link href="{{ cd_thememetronic_asset() }}assets/css/plugins.css" rel="stylesheet" type="text/css"/>
 		<link href="{{ cd_thememetronic_asset() }}assets/css/themes/default.css" rel="stylesheet" type="text/css" id="style_color"/>
-		<link href="{{ cd_thememetronic_asset() }}assets/css/pages/login.css" rel="stylesheet" type="text/css"/>
+		<link href="{{ cd_thememetronic_asset() }}assets/css/pages/login-soft.css" rel="stylesheet" type="text/css"/>
 		<link href="{{ cd_thememetronic_asset() }}assets/css/custom.css" rel="stylesheet" type="text/css"/>
 		<link href="{{ cd_backend_asset() }}css/cdbackend.css" rel="stylesheet" type="text/css"/>
 		<!-- END THEME STYLES -->
@@ -40,7 +40,7 @@
 	<!-- END HEAD -->
 	<body class="backend page-header-fixed login @yield('body_class')">
 		<div class="logo">
-			<a href="index.html">
+			<a href="/admin">
 				<img src="{{ cd_backend_logo() }}" alt=""/>
 			</a>
 		</div>
@@ -57,12 +57,16 @@
 		<script src="{{ cd_thememetronic_asset() }}assets/plugins/jquery.blockui.min.js" type="text/javascript"></script>
 		<script src="{{ cd_thememetronic_asset() }}assets/plugins/jquery.cokie.min.js" type="text/javascript"></script>
 		<script src="{{ cd_thememetronic_asset() }}assets/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
-		<!-- END CORE PLUGINS -->
+		<script src="{{ cd_thememetronic_asset() }}assets/plugins/jquery-validation/dist/jquery.validate.min.js" type="text/javascript"></script>
+		<script src="{{ cd_thememetronic_asset() }}assets/plugins/backstretch/jquery.backstretch.min.js" type="text/javascript"></script>
 		<script src="{{ cd_thememetronic_asset() }}assets/scripts/core/cdbase.js"></script>
+
+		<script src="{{ cd_thememetronic_asset() }}assets/scripts/custom/login-soft.js" type="text/javascript"></script>
 		<script src="{{ cd_backend_asset() }}js/cdbackend.js"></script>
 		<script type="text/javascript">
 jQuery(document).ready(function() {
 	App.init();
+	Login.init();
 });
 		</script>
 		<!-- END JAVASCRIPTS -->

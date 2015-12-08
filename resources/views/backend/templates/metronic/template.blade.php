@@ -112,13 +112,13 @@
 		<script src="{{ cd_thememetronic_asset() }}assets/plugins/jquery.blockui.min.js" type="text/javascript"></script>
 		<script src="{{ cd_thememetronic_asset() }}assets/plugins/jquery.cokie.min.js" type="text/javascript"></script>
 		<script src="{{ cd_thememetronic_asset() }}assets/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
-		<!-- END CORE PLUGINS -->
+		<script src="{{ cd_thememetronic_asset() }}assets/plugins/jquery-validation/dist/jquery.validate.min.js" type="text/javascript"></script>
 		<script src="{{ cd_thememetronic_asset() }}assets/scripts/core/cdbase.js"></script>
 		<script src="{{ cd_backend_asset() }}js/cdbackend.js"></script>
 		<script type="text/javascript">
-jQuery(document).ready(function() {
-	App.init();
-});
+			jQuery(document).ready(function() {
+				App.init();
+			});
 		</script>
 		<!-- END JAVASCRIPTS -->
 		@yield('body_bottom')
