@@ -50,3 +50,21 @@ body.print-view .page-content,
 body.print-view .page-container{
 	padding:0px !important;;margin:0px !important;
 }
+
+/**Focused Entity**/
+.focusedEntity {
+	border-bottom: 1px solid #666;
+}
+.focusedEntity h3.page-title{
+	font-size: 20px;
+	margin-left: 10px;
+}
+.portlet.focusedEntity > .portlet-title{
+	margin-bottom: 0px;
+}
+.widget-toolbars-top{
+	margin-bottom: 30px;
+}
+.widget-note{
+	background: none !important;
+}

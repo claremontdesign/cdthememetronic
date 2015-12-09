@@ -38,7 +38,9 @@
 	</head>
 	<!-- END HEAD -->
 	<body class="backend page-header-fixed @yield('body_class')">
+		{!! cd_block('pre_header') !!}
 		{!! view(cd_thememetronic_view_name('partial.header')) !!}
+		{!! cd_block('post_header') !!}
 		<div class="clearfix"></div>
 		<!-- CONTENT -->
 		<!-- BEGIN CONTAINER -->
@@ -63,29 +65,33 @@
 						<div class="col-md-12">
 							{!! cd_display_errors() !!}
 							{!! cd_display_msgs() !!}
-							<div class="row widget-toolbars">
-								<div class="col-md-6 pull-left">
+							{!! cd_block('pre_focusedEntity') !!}
+							{!! cd_backend_render_focusedEntity() !!}
+							{!! cd_block('post_focusedEntity') !!}
+							<div class="row widget-toolbars widget-toolbars-top">
+								<div class="col-md-6 pull-left widget-toolbars-top-left">
 									{!! cd_backend_toolbars('topleft') !!}
 								</div>
-								<div class="col-md-6 pull-right" style="text-align:right;">
+								<div class="col-md-6 pull-right widget-toolbars-top-right" style="text-align:right;" >
 									{!! cd_backend_toolbars('topright') !!}
 								</div>
 							</div>
+
+							{!! cd_block('pre_content') !!}
+
 							<div class="portlet">
-								<div class="portlet-title">
-									<div class="caption">
-										{{ cd_backend_render_entity_title() }}
-									</div>
-								</div>
 								<div class="portlet-body">
 									@yield('content')
 								</div>
 							</div>
-							<div class="row widget-toolbars">
-								<div class="col-md-6 pull-left">
+
+							{!! cd_block('post_content') !!}
+
+							<div class="row widget-toolbars widget-toolbars-bottom">
+								<div class="col-md-6 pull-left widget-toolbars-bottom-left widget-toolbars-left">
 									{!! cd_backend_toolbars('bottomleft') !!}
 								</div>
-								<div class="col-md-6 pull-right">
+								<div class="col-md-6 pull-right widget-toolbars-bottom-right widget-toolbars-right"  style="text-align:right;">
 									{!! cd_backend_toolbars('bottomright') !!}
 								</div>
 							</div>
@@ -99,8 +105,9 @@
 		<!-- END CONTAINER -->
 
 		<!-- CONTENT -->
-
+		{!! cd_block('pre_footer') !!}
 		{!! view(cd_thememetronic_view_name('partial.footer')) !!}
+		{!! cd_block('post_footer') !!}
 		<!-- BEGIN CORE PLUGINS -->
 		<!--[if lt IE 9]>
 		   <script src="{{ cd_thememetronic_asset() }}assets/plugins/respond.min.js"></script>
@@ -116,9 +123,9 @@
 		<script src="{{ cd_thememetronic_asset() }}assets/scripts/core/cdbase.js"></script>
 		<script src="{{ cd_backend_asset() }}js/cdbackend.js"></script>
 		<script type="text/javascript">
-			jQuery(document).ready(function() {
-				App.init();
-			});
+jQuery(document).ready(function() {
+	App.init();
+});
 		</script>
 		<!-- END JAVASCRIPTS -->
 		@yield('body_bottom')
