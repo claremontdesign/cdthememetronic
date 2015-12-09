@@ -63,11 +63,11 @@
 					<!-- BEGIN PAGE CONTENT-->
 					<div class="row page-main-content">
 						<div class="col-md-12">
-							{!! cd_display_errors() !!}
-							{!! cd_display_msgs() !!}
 							{!! cd_block('pre_focusedEntity') !!}
 							{!! cd_backend_render_focusedEntity() !!}
 							{!! cd_block('post_focusedEntity') !!}
+							{!! cd_display_errors() !!}
+							{!! cd_display_msgs() !!}
 							<div class="row widget-toolbars widget-toolbars-top">
 								<div class="col-md-6 pull-left widget-toolbars-top-left">
 									{!! cd_backend_toolbars('topleft') !!}

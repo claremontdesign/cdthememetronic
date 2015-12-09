@@ -20,29 +20,23 @@
 			<!-- BEGIN USER LOGIN DROPDOWN -->
 			<li class="dropdown user">
 				<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-					<img alt="<?php echo app('auth')->user()->displayName()?>" src="<?php echo app('auth')->user()->avatar()?>"/>
+					<img alt="<?php echo app('auth')->user()->displayName() ?>" src="<?php echo app('auth')->user()->avatar() ?>"/>
 					<span class="username">
-						<?php echo app('auth')->user()->displayName()?>
+						<?php echo app('auth')->user()->displayName() ?>
 					</span>
 					<i class="fa fa-angle-down"></i>
 				</a>
+
+
+
 				<ul class="dropdown-menu">
-<!--					<li>
-						<a href="/admin/account/">
-							<i class="fa fa-user"></i> My Profile
-						</a>
-					</li>
-					<li class="divider"></li>-->
+					{!! cd_backend_render_nav('topright') !!}
+					 <li class="divider"></li>
 					<li>
 						<a href="javascript:;" id="trigger_fullscreen">
 							<i class="fa fa-arrows"></i> Full Screen
 						</a>
 					</li>
-<!--					<li>
-						<a href="/admin/lockout">
-							<i class="fa fa-lock"></i> Lock Screen
-						</a>
-					</li>-->
 					<li>
 						<a href="/admin/logout">
 							<i class="fa fa-key"></i> Log Out

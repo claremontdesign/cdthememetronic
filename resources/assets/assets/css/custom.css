@@ -33,6 +33,31 @@ td.column-type-sortable{
 .input-group{
 	width:100%;
 }
+.form-fieldset{
+	margin-bottom: 80px;
+}
+.form-fieldset h3{
+	border-bottom: 1px solid #666;
+}
+.form-fieldset .form-fieldset-elements{}
+.form-tab-content{
+	padding: 20px;
+}
+.form-nav-tab.nav-tab-has-error{
+
+}
+.form-nav-tab.nav-tab-has-error a{
+	color: red !important;
+	font-weight: bold;
+	background-color: #f2dede;
+	border: 1px solid red;
+	border-bottom:0px;
+}
+.form-nav-tab.nav-tab-has-error a:hover{
+	border: 1px solid red;
+	border-bottom:0px;
+}
+
 /**PrintView**/
 body.print-view{
 	background-color: white !important;
