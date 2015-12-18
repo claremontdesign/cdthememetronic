@@ -23,6 +23,9 @@
 		<link href="{{ cd_thememetronic_asset() }}assets/css/style-metronic.css" rel="stylesheet" type="text/css"/>
 		<link href="{{ cd_thememetronic_asset() }}assets/css/style.css" rel="stylesheet" type="text/css"/>
 		<link href="{{ cd_thememetronic_asset() }}assets/css/style-responsive.css" rel="stylesheet" type="text/css"/>
+
+		@yield('head_plugin')
+
 		<link href="{{ cd_thememetronic_asset() }}assets/css/plugins.css" rel="stylesheet" type="text/css"/>
 		<link href="{{ cd_thememetronic_asset() }}assets/css/themes/default.css" rel="stylesheet" type="text/css" id="style_color"/>
 		<link href="{{ cd_thememetronic_asset() }}assets/css/custom.css" rel="stylesheet" type="text/css"/>
@@ -122,6 +125,7 @@
 		<script src="{{ cd_thememetronic_asset() }}assets/plugins/jquery-validation/dist/jquery.validate.min.js" type="text/javascript"></script>
 		<script src="{{ cd_thememetronic_asset() }}assets/plugins/jquery-validation/dist/jquery.validate.min.js" type="text/javascript"></script>
 		<script src="{{ cd_thememetronic_asset() }}assets/plugins/jquery-validation/dist/additional-methods.min.js" type="text/javascript"></script>
+		@yield('js_plugin')
 		<script src="{{ cd_thememetronic_asset() }}assets/scripts/core/cdbase.js"></script>
 		<script src="{{ cd_backend_asset() }}js/cdbackend.js"></script>
 		<script type="text/javascript">

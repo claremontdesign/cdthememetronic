@@ -93,3 +93,8 @@ body.print-view .page-container{
 .widget-note{
 	background: none !important;
 }
+
+/**TREE VIEW widget**/
+.jstree-default .jstree-wholerow-clicked, .jstree-wholerow .jstree-wholerow-clicked{
+	background-color: unset !important;
+}
