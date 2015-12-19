@@ -14,6 +14,7 @@
 		<meta content="Dennes B Abing" name="author"/>
 
 		<!-- BEGIN GLOBAL MANDATORY STYLES -->
+		<meta name="_token" content="{{ csrf_token() }}"/>
 		<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css"/>
 		<link href="{{ cd_thememetronic_asset() }}assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
 		<link href="{{ cd_thememetronic_asset() }}assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
@@ -34,6 +35,7 @@
 		<script src="{{ cd_thememetronic_asset() }}assets/plugins/jquery-1.10.2.min.js" type="text/javascript"></script>
 		<script src="{{ cd_thememetronic_asset() }}assets/plugins/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
 		<script src="{{ cd_thememetronic_asset() }}assets/plugins/jquery-ui/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+
 		@yield('head')
 
 		@yield('head_bottom')

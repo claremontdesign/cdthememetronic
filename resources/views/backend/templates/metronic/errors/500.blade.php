@@ -3,6 +3,7 @@
 @section('meta_title', 'Page Not Found')
 @section('meta_keywords', '')
 @section('meta_description', '')
+@section('page_title', 'System Error.')
 @section('head')
 <link href="{{ cd_thememetronic_asset() }}assets/css/pages/error.css" rel="stylesheet" type="text/css"/>
 @append

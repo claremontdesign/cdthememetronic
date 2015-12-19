@@ -98,3 +98,6 @@ body.print-view .page-container{
 .jstree-default .jstree-wholerow-clicked, .jstree-wholerow .jstree-wholerow-clicked{
 	background-color: unset !important;
 }
+.jstree-anchor.jstree-hovered{
+	background-color: #E1E1E1 !important;
+}
