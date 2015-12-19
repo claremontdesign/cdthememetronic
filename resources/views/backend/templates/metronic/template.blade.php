@@ -19,12 +19,15 @@
 		<link href="{{ cd_thememetronic_asset() }}assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
 		<link href="{{ cd_thememetronic_asset() }}assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
 		<link href="{{ cd_thememetronic_asset() }}assets/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css"/>
+
+
 		<!-- END GLOBAL MANDATORY STYLES -->
 		<!-- BEGIN THEME STYLES -->
 		<link href="{{ cd_thememetronic_asset() }}assets/css/style-metronic.css" rel="stylesheet" type="text/css"/>
 		<link href="{{ cd_thememetronic_asset() }}assets/css/style.css" rel="stylesheet" type="text/css"/>
 		<link href="{{ cd_thememetronic_asset() }}assets/css/style-responsive.css" rel="stylesheet" type="text/css"/>
 
+		<link rel="stylesheet" type="text/css" href="{{ cd_thememetronic_asset() }}assets/plugins/bootstrap-toastr/toastr.min.css"/>
 		@yield('head_plugin')
 
 		<link href="{{ cd_thememetronic_asset() }}assets/css/plugins.css" rel="stylesheet" type="text/css"/>
@@ -127,13 +130,14 @@
 		<script src="{{ cd_thememetronic_asset() }}assets/plugins/jquery-validation/dist/jquery.validate.min.js" type="text/javascript"></script>
 		<script src="{{ cd_thememetronic_asset() }}assets/plugins/jquery-validation/dist/jquery.validate.min.js" type="text/javascript"></script>
 		<script src="{{ cd_thememetronic_asset() }}assets/plugins/jquery-validation/dist/additional-methods.min.js" type="text/javascript"></script>
+		<script src="{{ cd_thememetronic_asset() }}assets/plugins/bootstrap-toastr/toastr.min.js"></script>
 		@yield('js_plugin')
 		<script src="{{ cd_thememetronic_asset() }}assets/scripts/core/cdbase.js"></script>
 		<script src="{{ cd_backend_asset() }}js/cdbackend.js"></script>
 		<script type="text/javascript">
-jQuery(document).ready(function() {
-	App.init();
-});
+			jQuery(document).ready(function() {
+				App.init();
+			});
 		</script>
 		<!-- END JAVASCRIPTS -->
 		@yield('body_bottom')
