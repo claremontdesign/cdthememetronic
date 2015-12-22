@@ -11,7 +11,9 @@ td.column-type-sortable{
 
 }
 .ui-state-highlight { height: 1.5em; line-height: 1.2em; background-color: rgba(255,255,0, 0.3); }
-
+.row-highlight{
+	background-color: rgba(255,255,0, 0.4) !important;
+}
 /**FormStatic**/
 .form-group-static{
 	margin-bottom: 20px;
