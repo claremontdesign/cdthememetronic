@@ -103,3 +103,8 @@ body.print-view .page-container{
 .jstree-anchor.jstree-hovered{
 	background-color: #E1E1E1 !important;
 }
+
+/**PAGINATION**/
+.pagination-perpage{
+	margin-left:20px;
+}
