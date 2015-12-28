@@ -70,7 +70,7 @@
 					<!-- END PAGE HEADER-->
 					<!-- BEGIN PAGE CONTENT-->
 					<div class="row page-main-content">
-						<div class="col-md-12">
+						<div class="col-md-12 page-main-content-inner">
 							{!! cd_block('pre_focusedEntity') !!}
 							{!! cd_backend_render_focusedEntity() !!}
 							{!! cd_block('post_focusedEntity') !!}
