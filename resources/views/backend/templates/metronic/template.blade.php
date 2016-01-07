@@ -80,8 +80,10 @@
 								<div class="col-md-6 pull-left widget-toolbars-top-left">
 									{!! cd_backend_toolbars('topleft') !!}
 								</div>
-								<div class="col-md-6 pull-right widget-toolbars-top-right" style="text-align:right;" >
+								<div class="col-md-6 widget-toolbars-top-right">
+									<div class="pull-right">
 									{!! cd_backend_toolbars('topright') !!}
+									</div>
 								</div>
 							</div>
 
